@@ -28,7 +28,7 @@
       <input type="submit" class="fadeIn fourth" value="Create">
     </form>
 
-    <!-- Remind Passowrd -->
+    <!-- Remind Passo
     <div id="formFooter" class="row">
       <a class="underlineHover" href="login">Return Login Page</a>
     </div>

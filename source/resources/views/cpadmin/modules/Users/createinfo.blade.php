@@ -29,8 +29,6 @@
       <input type="password" id= class="fadeIn third"  name="age" placeholder="age">
       <input type="submit" class="fadeIn fourth" value="Sign up">
     </form>
-
-
   </div>
 </div>
 </body>

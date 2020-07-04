@@ -26,7 +26,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('Users.create');
+        return view('cpadmin.modules.Users.create');
     }
 
     /**
@@ -42,7 +42,7 @@ class UserController extends Controller
         $data['updated_at'] = new DateTime;  
  
         DB::table('account')->insert($data);
-        return redirect()->route('User.createinfo');
+        return view('cpadmin.modules.Users.createinfo');
     }
 
     /**
@@ -90,9 +90,12 @@ class UserController extends Controller
         
     }
     public function login(){
-        return view('Users.login');
+        return view('cpadmin.modules.Users.login');
     }
     
+    public function postlogin(){
+        return view('cpadmin.modules.Users.home');
+    }
 
     public function forgot(){
         return view('Users.forgotpass');

@@ -30,7 +30,7 @@
                     <option value="tactic">Tactic</option>  
                 </select>
               </div> --}}
-              {{-- <div class="form-group">
+                            {{-- <div class="form-group">
                 <label for="link">Link</label>
                 <input type="text" class="form-control" name="link" placeholder="Enter link">
               </div> --}}

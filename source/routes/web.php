@@ -30,7 +30,7 @@ Route::namespace('User')->prefix('user')->name('user.')->group(function(){
         Route::get('destroy/{id}','UserController@destroy')->name('destroy');
 
         Route::get('login','UserController@login')->name('login');
-        Route::post('postlogin','UserController@login')->name('postlogin');
+        Route::post('postlogin','UserController@postlogin')->name('postlogin');
 
         Route::get('forgot','UserController@forgot')->name('forgot');
 

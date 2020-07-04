@@ -20,7 +20,7 @@ class GameController extends Controller
         //
         return view('cpadmin.modules.Games.index');
     }
-
+    
     /**
      * Show the form for creating a new resource.
      *
@@ -45,6 +45,7 @@ class GameController extends Controller
         $data['created_at'] = new DateTime;
         $data['updated_at'] = new DateTime;
         DB::table('game')->insert($data);
+  
 
         return redirect()->route('game.games.index');
     }

@@ -15,6 +15,8 @@ class GameController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    // home 
+
     public function index()
     {
         //
@@ -29,7 +31,7 @@ class GameController extends Controller
     public function create()
     {
         //
-        return view('Games.create');
+        return view('Game.create');
     }
 
     /**

@@ -35,9 +35,9 @@ Route::namespace('User')->prefix('user')->name('user.')->group(function(){
         Route::get('forgot','UserController@forgot')->name('forgot');
 
         Route::get('createinfo','UserInfoController@createinfo');
+
+        Route::get('home','UserController@home')->name('home');
     });
-    
-   
 });
 
 Route::namespace('Game')->prefix('game')->name('game.')->group(function(){
@@ -53,5 +53,7 @@ Route::namespace('Game')->prefix('game')->name('game.')->group(function(){
         Route::post('update/{id}', 'GameController@update')->name('update');
 
         Route::get('delete/{id}','GameController@delete')->name('delete');
+
+        
     });
 });

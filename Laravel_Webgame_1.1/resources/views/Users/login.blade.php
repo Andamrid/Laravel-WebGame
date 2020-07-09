@@ -16,21 +16,22 @@
 
     <!-- Icon -->
     <div class="fadeIn first">
-      <img src="{{ asset('webre/icon/usericon.png') }}" id="icon" alt="User Icon"/>
-      <h1>Create Account</h1> 
+      <img src="{{ asset('webre/icon/usericon.png') }}" id="icon" alt="User Icon"/> 
+      <h1>Login</h1>
     </div>
 
-    <!-- Create Form -->
-    <form method="POST" action="{{route('user.users.store')}}" >
-        @csrf
-      <input type="text" id="login" class="fadeIn second" name="username" placeholder="User Name">
-      <input type="text" id="password" class="fadeIn third" name="password" placeholder="PassWord">
-      <input type="submit" class="fadeIn fourth" value="Create">
+    <!-- Login Form -->
+    <form method="POST" action="{{route('user.users.postlogin')}}">
+      @csrf
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Log In">
     </form>
 
-    <!-- Remind Passo
+    <!-- Remind Passowrd -->
     <div id="formFooter" class="row">
-      <a class="underlineHover" href="login">Return Login Page</a>
+      <a class="underlineHover" href="forgot">Forgot Password?</a>
+      <a class="underlineHover" href="create">Sign Up</a>
     </div>
 
   </div>

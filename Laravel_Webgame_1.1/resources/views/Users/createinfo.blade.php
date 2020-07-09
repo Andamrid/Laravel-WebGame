@@ -21,13 +21,15 @@
     </div>
 
     <!-- Register Form -->
-    <form method="POST" action="{{route('user.users.postlogin')}}">
+    <form method="POST" action="{{ route('user.users.postlogin')}}">
       @csrf
-      <input type="text" id="login" class="fadeIn second" name="name" placeholder="name">
-      <input type="password" id="password" class="fadeIn third" name="gender" placeholder="gender">
-      <input type="password" id= class="fadeIn third"  name="email" placeholder="email">
-      <input type="password" id= class="fadeIn third"  name="age" placeholder="age">
-      <input type="submit" class="fadeIn fourth" value="Sign up">
+      <div class="form-group">
+        <input type="text" id="login" class="fadeIn second form-control" name="name" placeholder="name">
+        <input type="text" id="password" class="fadeIn third" name="gender" placeholder="gender">
+        <input type="text"  class="fadeIn third"  name="email" placeholder="email">
+        <input type="text"  class="fadeIn third"  name="age" placeholder="age">
+        <input type="submit" class="fadeIn fourth" value="Sign up">
+      </div>
     </form>
   </div>
 </div>

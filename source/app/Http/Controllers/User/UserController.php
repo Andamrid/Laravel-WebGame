@@ -94,12 +94,12 @@ class UserController extends Controller
     }
     
     public function postlogin(){
-        return view('cpadmin.modules.Users.home');
+        return view('cpadmin.master');
     }
 
     public function forgot(){
         return view('Users.forgotpass');
-    }
+    }x
 
     public function register(){
         return view('Users.register');

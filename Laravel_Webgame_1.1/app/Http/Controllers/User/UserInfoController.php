@@ -1,14 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Game;
+namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use DB;
-use DateTime;
 
-
-class GameController extends Controller
+class UserInfoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,9 +15,8 @@ class GameController extends Controller
     public function index()
     {
         //
-        return view('cpadmin.modules.Games.index');
     }
-    
+
     /**
      * Show the form for creating a new resource.
      *
@@ -29,7 +25,6 @@ class GameController extends Controller
     public function create()
     {
         //
-        return view('Games.create');
     }
 
     /**
@@ -40,14 +35,7 @@ class GameController extends Controller
      */
     public function store(Request $request)
     {
-        
-        $data = $request->except('_token');
-        $data['created_at'] = new DateTime;
-        $data['updated_at'] = new DateTime;
-        DB::table('game')->insert($data);
-  
-
-        return redirect()->route('game.games.index');
+        //
     }
 
     /**
@@ -93,5 +81,8 @@ class GameController extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function createinfo(){
+        return view('User.createinfo');
     }
 }

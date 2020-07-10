@@ -1,6 +1,15 @@
-@extends('home')
-@section('title','Create User')
-@section('content')     
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ asset('webre/css/style.css') }}" rel="stylesheet" >
+    <link href="{{ asset('webre/css/login.css') }}" rel="stylesheet">
+    <script src="{{ asset('webre/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('webre/js/jquery.min.js') }}"></script>
+    <title>Document</title>
+</head>
+<body>
 <div class="wrapper fadeInDown">
   <div id="formContent">
     <!-- Tabs Titles -->
@@ -24,9 +33,8 @@
     </form>
   </div>
 </div>
+</body>
+</html>
 
 <!------ Include the above in your HEAD tag ---------->
 
-<!------ Include the above in your HEAD tag ---------->
-
-@endsection

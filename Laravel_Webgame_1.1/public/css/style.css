@@ -2,8 +2,8 @@
     background-color: lightgrey;
 }
 .page-footer{
-    position: fixed; 
-    padding: 10px 10px 0px 10px; 
-    bottom: 0; 
-    width: 100%;
+    margin-top: 20px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto
 }

@@ -48,7 +48,7 @@ class UserController extends Controller
         $data['updated_at'] = new DateTime;  
  
         DB::table('account')->insert($data);
-        return view('cpadmin.modules.Users.createinfo');
+        return view('Users.createinfo');
     }
 
     /**
